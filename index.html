@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <input type="date" placeholder="2000-01-31" maxlength="10" id="userdate">
-    <button onclick="subm()">Submit</button>
+    <div class="container">
+        <div class="miniContainer">
+        <div class="datetimer">
+<input type="date" name="" id="date">
+<button onclick="subm()" id="CDS">Count Down Start</button>
+</div>
+
+    <div class="time">
+        <span>Birthday Day</span>
+        <span>Days Left</span>
+        <span>Hours</span>
+        <span>Minutes</span>
+        <span>Second</span>
+        <span id="time1">00</span>
+        <span id="time2">00</span>
+        <span id="time3">00</span>
+        <span id="time4">00</span>
+        <span id="time5">00</span>
+    </div>
+    <div id="timer">
+       00 00 00 00 00 
+    </div>
+</div>
+<img src="./happy birthday.gif" alt="image not found" id="gifImg">
+</div>
+<audio id="audioPlayer" controls>
+    <source id="audioSource" src="" type="audio/mpeg">
+</audio>
     <script src="app.js"></script>
 </body>
 </html>

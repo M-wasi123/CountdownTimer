@@ -57,7 +57,7 @@ document.getElementById("time3").innerText = `${hours.toString().padStart(2 , '0
 document.getElementById("time4").innerText = `${minutes.toString().padStart(2 , '0')}`
 document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , '0')}`
   
-},1000)
+},1)
 
 
 

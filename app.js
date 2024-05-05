@@ -60,6 +60,9 @@ document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , 
 
 
 }
+function songPlay() {
+  audioPlayer.play();
+}
 audioSource.src = "38-Michael-Riepen-Happy-Birthday(chosic.com).mp3";
         audioPlayer.load();
 songPlay();

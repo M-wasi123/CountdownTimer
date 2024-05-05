@@ -5,7 +5,7 @@ var audioPlayer = document.getElementById('audioPlayer');
 var audioSource = document.getElementById('audioSource');
 let clock;
 function subm() {
-  audioPlayer.play();
+  
   let targetDate = new Date(user.value + 'T08:00:00').getTime();
   let targetDates = new Date(user.value);
 
@@ -42,9 +42,8 @@ clock = setInterval(function time() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     image.style.display = 'block'
     container.style.display = 'none'
-    function songPlay() {
       audioPlayer.play();
-    }
+    
   
       }
     

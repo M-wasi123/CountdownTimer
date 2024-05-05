@@ -5,10 +5,11 @@ var audioPlayer = document.getElementById('audioPlayer');
 var audioSource = document.getElementById('audioSource');
 let clock;
 function subm() {
- 
-  let targetDate = new Date(user.value + 'T08:00:00').getTime();
+  
+  let targetDate = new Date(user.value + 'T13:35:00').getTime();
   let targetDates = new Date(user.value);
-
+  let currentDates = new Date();
+let today = new Date().toLocaleString('en-US',{weekday: 'short'})
 let dayName = targetDates.toLocaleString('en-US',{weekday: 'short'})
   let currentDate = new Date().getTime();
 
@@ -43,10 +44,14 @@ clock = setInterval(function time() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     image.style.display = 'block'
     container.style.display = 'none'
-   
-    
   
       }
+      if (hours === 0 && minutes === 0) {
+      
+          audioPlayer.play();
+        
+      }
+      
     
 document.getElementById("time1").innerText = `${dayName}`
 document.getElementById("time2").innerText = `${days.toString().padStart(2 , '0')}`
@@ -61,9 +66,8 @@ document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , 
 
 
 }
-function song() {
-  audioPlayer.play();
-}
-window.song()
+
+
+
         audioPlayer.load();
 

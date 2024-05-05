@@ -19,9 +19,7 @@ let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-if (user.value = 'mm/dd/yyyy') {
-  alert('Enter your Birthday date')
-}
+
 clearInterval(clock)
 clock = setInterval(function time() {
   

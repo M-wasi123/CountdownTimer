@@ -41,7 +41,10 @@ clock = setInterval(function time() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     image.style.display = 'block'
     container.style.display = 'none'
-    audioPlayer.play();
+    function songPlay() {
+      audioPlayer.play();
+    }
+  
       }
     
 document.getElementById("time1").innerText = `${dayName}`
@@ -59,4 +62,4 @@ document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , 
 }
 audioSource.src = "38-Michael-Riepen-Happy-Birthday(chosic.com).mp3";
         audioPlayer.load();
-
+songPlay();

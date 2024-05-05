@@ -69,3 +69,12 @@ text-align: center;
     margin-top: -40px;
     display: none;
 }
+
+
+
+@media only screen and (max-width: 400px) {
+    .miniContainer{
+        max-width: 350px;
+        padding: 5px;
+    }
+}

@@ -42,7 +42,7 @@ clock = setInterval(function time() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     image.style.display = 'block'
     container.style.display = 'none'
-      audioPlayer.play();
+    audioPlayer.play();
     
   
       }

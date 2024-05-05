@@ -19,6 +19,9 @@ let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
+if (user.value = 'mm/dd/yyyy') {
+  alert('Enter your Birthday date')
+}
 clearInterval(clock)
 clock = setInterval(function time() {
   
@@ -42,7 +45,7 @@ clock = setInterval(function time() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     image.style.display = 'block'
     container.style.display = 'none'
-    audioPlayer.play();
+   
     
   
       }
@@ -60,5 +63,9 @@ document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , 
 
 
 }
+function song() {
+  audioPlayer.play();
+}
+window.song()
         audioPlayer.load();
 

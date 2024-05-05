@@ -5,11 +5,9 @@ var audioPlayer = document.getElementById('audioPlayer');
 var audioSource = document.getElementById('audioSource');
 let clock;
 function subm() {
-  
-  let targetDate = new Date(user.value + 'T13:35:00').getTime();
+ 
+  let targetDate = new Date(user.value + "T13:45:00").getTime();
   let targetDates = new Date(user.value);
-  let currentDates = new Date();
-let today = new Date().toLocaleString('en-US',{weekday: 'short'})
 let dayName = targetDates.toLocaleString('en-US',{weekday: 'short'})
   let currentDate = new Date().getTime();
 
@@ -59,7 +57,7 @@ document.getElementById("time3").innerText = `${hours.toString().padStart(2 , '0
 document.getElementById("time4").innerText = `${minutes.toString().padStart(2 , '0')}`
 document.getElementById("time5").innerText = `${seconds.toString().padStart(2 , '0')}`
   
-},1)
+},1000)
 
 
 

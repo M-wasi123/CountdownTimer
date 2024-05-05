@@ -60,9 +60,6 @@ column-gap: 20px;
 row-gap: 10px;
 text-align: center;
 }
-#timer{
-    display: none;
-}
 
 #gifImg{
     position: absolute;
